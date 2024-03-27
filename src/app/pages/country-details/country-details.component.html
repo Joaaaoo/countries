@@ -1,0 +1,4 @@
+<p>country-details works!</p>
+@if (country$ | async; as country) {
+    <span>nome: {{ country.name.official}}</span>
+}

@@ -1,0 +1,14 @@
+@import '../../../styles/variables.scss';
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 7%;
+    border-bottom: 1px solid $grey;  
+}  
+
+h1  {
+    cursor: pointer;
+}

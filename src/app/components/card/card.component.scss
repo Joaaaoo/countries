@@ -1,0 +1,50 @@
+@import '../../../styles/variables.scss';
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    margin-bottom: 10%;
+    border-radius: 4px;
+    background-color: $greyBackground;
+    border: 1px solid $greyBorder;
+    cursor: pointer;
+    transition: transform 0.18s ease-out;
+
+    &:hover {
+        border: 1px solid $lightBlue;
+        transform: scale(1.01);
+
+        span, h1{
+            color: $lightBlue;
+            transition:  0.15s ease-out;
+        }
+      }
+}
+
+.cardInfos{
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 5px;
+    border-top: 1px solid $greyBorder;
+    transition: 0.3s;
+}
+
+.cardImg{
+    height: 200px;
+    width: 300px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+    object-fit: cover;
+}
+
+h1{
+    padding-bottom: 10px;
+}

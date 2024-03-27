@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import '../styles/variables.scss';
+
+html,
+body,
+table,
+button,
+span {
+    font-family: 'Nunito Sans';
+}
+
+body {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 20px;
+    color: $greyFont;
+}
+
+h2 {
+    font-size: 16px;
+    color: $greyFont;
+}
+
+span {
+    font-size: 15px;
+    color: $greyFont;
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+    color: $black;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+
+a:link {
+    text-decoration: none;
+}
