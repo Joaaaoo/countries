@@ -1,12 +1,12 @@
+@import '../../../styles/variables.scss';
+
 main{
-    padding: 30px 7%;
+    padding: 30px 15%;
 
 }
 
 section{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
 }

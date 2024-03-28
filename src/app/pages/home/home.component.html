@@ -1,9 +1,8 @@
 <main>
-    <section class="fadeIn">
-        @if (countries$ | async; as countries) {
-            @for ( country of countries; track country.id){
-            <app-card [country]="country"></app-card>
-            }
-        }
-    </section>
+  <section class="fadeIn">
+    @if (countries$ | async; as countries) { @for ( country of countries; track
+    country.id){
+    <app-card [country]="country"></app-card>
+    } }
+  </section>
 </main>

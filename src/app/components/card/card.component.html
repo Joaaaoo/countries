@@ -1,15 +1,13 @@
-<article class="card"  [routerLink]="['/details/' + country.ccn3]">
+<article class="card" [routerLink]="['/details/' + country.ccn3]">
+  <section class="cardImg">
+    <img [src]="country.flags.png" alt="Flag" />
+  </section>
 
-    <section class="cardImg">
-      <img [src]="country.flags.png" alt="Flag">
-    </section>  
-
-    <section class="cardInfos">
-      <h1>{{ country.name.official }}</h1>
-      <span>Capital: {{ country.capital }}</span>
+  <section class="cardInfos">
+    <h1>{{ country.name.common }}</h1>
+    <!---<span>Capital: {{ country.capital }}</span>
       <span>Population: {{ country.population }}</span>
       <span>Region: {{ country.region }}</span>
-      <span>Subregion: {{ country.subregion }}</span>
-    </section>
-
+      <span>Subregion: {{ country.subregion }}</span>-->
+  </section>
 </article>

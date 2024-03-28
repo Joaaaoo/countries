@@ -2,27 +2,29 @@ import { Component } from '@angular/core';
 import { CardComponent } from '../../components/card/card.component';
 import { HttpClient } from '@angular/common/http';
 import { ApiService } from '../../services/api.service';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CardComponent, CommonModule],
+  imports: [CardComponent, CommonModule, FormsModule],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.scss'
+  styleUrl: './home.component.scss',
 })
 export class HomeComponent {
+  countries: any[] = [];
+  searchTerm: string = '';
   countries$ = new Observable<any[]>();
 
-  constructor( public apiService :ApiService ) {}
+  constructor(public apiService: ApiService) {}
 
   ngOnInit(): void {
-   this.loadCountries();
+    this.loadCountries();
   }
 
-  loadCountries(){
+  loadCountries() {
     this.countries$ = this.apiService.getCountries();
   }
-
 }

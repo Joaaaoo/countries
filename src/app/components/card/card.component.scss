@@ -2,18 +2,17 @@
 
 .card{
     display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 300px;
-    margin-bottom: 10%;
+    flex-direction: row;
+    align-items: center;
+    background-color: $grey;
+    padding: 45px;
+    gap: 25px;
     border-radius: 4px;
-    background-color: $greyBackground;
-    border: 1px solid $greyBorder;
     cursor: pointer;
     transition: transform 0.18s ease-out;
 
     &:hover {
-        border: 1px solid $lightBlue;
+        background-color: $greyHover;
         transform: scale(1.01);
 
         span, h1{
@@ -25,26 +24,19 @@
 
 .cardInfos{
     display: flex;
-    flex-direction: column; 
+    flex-direction: row; 
     flex-wrap: wrap;
-    padding: 15px;
-    gap: 5px;
-    border-top: 1px solid $greyBorder;
     transition: 0.3s;
 }
 
 .cardImg{
-    height: 200px;
-    width: 300px;
+    height: 50px;
+    min-width: 100px;
 }
 
 img {
     height: 100%;
     width: 100%;
-    border-radius: 4px 4px 0 0;
+    border-radius: 8px;
     object-fit: cover;
-}
-
-h1{
-    padding-bottom: 10px;
 }
