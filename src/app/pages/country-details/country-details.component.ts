@@ -9,19 +9,21 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './country-details.component.html',
-  styleUrl: './country-details.component.scss'
+  styleUrl: './country-details.component.scss',
 })
 export class CountryDetailsComponent {
   country$!: Observable<any>; // Remova o tipo de array
 
-
-  constructor( public apiService :ApiService, private activeRoute: ActivatedRoute ) {}
+  constructor(
+    public apiService: ApiService,
+    private activeRoute: ActivatedRoute
+  ) {}
 
   ngOnInit(): void {
-   this.loadCountrieByID();
+    this.loadCountrieByID();
   }
 
-  loadCountrieByID(){
+  loadCountrieByID() {
     const countryID = this.activeRoute.snapshot.params.id;
     this.country$ = this.apiService.getCountryById(countryID);
   }
