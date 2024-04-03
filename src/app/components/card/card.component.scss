@@ -4,15 +4,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    // background-color: $grey;
     gap: 25px;
     cursor: pointer;
-    // transition: transform 0.18s ease-out;
 
     &:hover {
-        // background-color: $greyHover;
-        // transform: scale(1.01);
-
         span, h1{
             color: $lightBlue;
             transition:  0.15s ease-out;
@@ -29,7 +24,7 @@
 
 .cardImg{
     height: 30px;
-    max-width: 50px;
+    min-width: 60px;
 }
 
 img {
