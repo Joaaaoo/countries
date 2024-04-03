@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/mona-sans');
 @import '../styles/variables.scss';
 
 html,
@@ -6,7 +6,7 @@ body,
 table,
 button,
 span {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Mona-Sans', sans-serif;
 }
 
 body {
@@ -14,9 +14,10 @@ body {
 }
 
 h1 {
-    font-size: 18px;
-    color: $greyFont;
-    font-weight: 600;
+    font-size: 16px;
+    color: $black;
+    font-weight: 500;
+    font-stretch: 125%;
 }
 
 h2 {
