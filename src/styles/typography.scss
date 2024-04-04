@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/mona-sans');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 @import '../styles/variables.scss';
 
 
@@ -6,8 +6,9 @@ html,
 body,
 table,
 button,
-span {
-    font-family: 'Mona-Sans', sans-serif;
+span,
+input {
+    font-family: 'Lexend', sans-serif;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
 
 h1 {
     font-size: 14px;
-    color: $black;
+    color: $blackGreyish;
     font-weight: 500;
     font-stretch: 125%;
 }

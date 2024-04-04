@@ -1,11 +1,39 @@
 @import '../../../styles/variables.scss';
 
 main{
-    padding: 30px 15%;
+    padding: 40px 15%;
+}
+
+.searchBar{
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: $grey;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+span{
+  margin-left: 5px;
+  color: $greyFont!important;
+  font-size: 22px;
+
+}
+
+#searchInput{
+  background-color: transparent;
+  border: none;
+  color: $greyFont;
+  width: 450px;
+  outline: none;
 }
 
 section{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 50px;
+  grid-auto-rows: auto;
+  gap: 25px;
 }

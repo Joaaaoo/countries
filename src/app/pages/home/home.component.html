@@ -1,14 +1,18 @@
 <main>
   <form [formGroup]="searchFilter">
-    <input
-      id="inputPesquisa"
-      class="inputPesquisa"
-      formControlName="filterInput"
-      pInputText
-      type="text"
-      placeholder="Digite aqui para pesquisar..."
-    />
+    <div class="searchBar">
+      <span class="material-symbols-outlined"> search </span>
+      <input
+        id="searchInput"
+        class="searchInput"
+        formControlName="filterInput"
+        pInputText
+        type="text"
+        placeholder="Search..."
+      />
+    </div>
   </form>
+
   <section class="fadeIn">
     @if (countries$ | async; as countries) { @for ( country of countries; track
     country.id){

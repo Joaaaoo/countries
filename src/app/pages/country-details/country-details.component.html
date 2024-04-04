@@ -1,32 +1,28 @@
 <main>
-    <button class="previusPageBtn" [routerLink]="['/']"><i class="gg-arrow-left"></i></button>
+  <button class="previusPageBtn" [routerLink]="['/']">
+    <span class="material-symbols-outlined"> arrow_back </span>
+  </button>
 
-
-    
-    <section>
-
-        @if (country$ | async; as country) {
-            <section class="cardImg">
-                <img [src]="country.flags.png" alt="Flag">
-              </section>  
-          
-              <section class="cardInfos">
-                <h1>{{ country.name.official }}</h1>
-                <span>Capital: {{ country.capital }}</span>
-                <span>Population: {{ country.population }}</span>
-                <span>Region: {{ country.region }}</span>
-                <span>Subregion: {{ country.continent }}</span>
-                <span>Subregion: {{ country.subregion }}</span>
-                <span>Subregion: {{ country.independent }}</span>
-                <span>Subregion: {{ country.currencies }}</span>
-                <span>Subregion: {{ country.languages }}</span>
-                <span>Subregion: {{ country.borders }}</span>
-                <span>Subregion: {{ country.maps.googleMaps }}</span>
-            
-            </section>
-
-
-        }
-        
+  <section>
+    @if (country$ | async; as country) {
+    <section class="cardImg">
+      <img [src]="country.flags.png" alt="Flag" />
     </section>
+
+    <section class="cardInfos">
+      <h1>{{ country.name.official }}</h1>
+      <span>Capital: {{ country.capital }}</span>
+      <span>Population: {{ country.population }}</span>
+      <span>Region: {{ country.region }}</span>
+      <span>Subregion: {{ country.continent }}</span>
+      <span>Subregion: {{ country.subregion }}</span>
+      <span>Subregion: {{ country.independent }}</span>
+      <span>Subregion: {{ country.currencies }}</span>
+      <span>Subregion: {{ country.languages }}</span>
+      <span>Subregion: {{ country.borders }}</span>
+      <span>Subregion: {{ country.maps.googleMaps }}</span>
+    </section>
+
+    }
+  </section>
 </main>
