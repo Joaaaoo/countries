@@ -1,22 +1,25 @@
 <main>
-  <form [formGroup]="searchFilter">
-    <div class="searchBar">
-      <span class="material-symbols-outlined"> search </span>
-      <input
-        id="searchInput"
-        class="searchInput"
-        formControlName="filterInput"
-        pInputText
-        type="text"
-        placeholder="Search..."
-      />
-    </div>
-  </form>
-
-  <section class="fadeIn">
+  <section class="searchSection">
+    <form [formGroup]="searchFilter">
+      <div class="searchBar">
+        <span class="material-symbols-outlined"> search </span>
+        <input
+          id="searchInput"
+          class="searchInput"
+          formControlName="filterInput"
+          pInputText
+          type="text"
+          placeholder="Search..."
+        />
+      </div>
+    </form>
+  </section>
+  <section class="countriesGrid fadeIn">
     @if (countries$ | async; as countries) { @for ( country of countries; track
     country.id){
     <app-card [country]="country"></app-card>
     } }
   </section>
+
+  <app-scroll-to-top-button></app-scroll-to-top-button>
 </main>

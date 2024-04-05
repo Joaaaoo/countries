@@ -13,7 +13,12 @@ main{
   padding: 10px;
   background-color: $grey;
   border-radius: 12px;
-  margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  .searchBar{
+    width: 300px;
+  }
 }
 
 span{
@@ -31,9 +36,17 @@ span{
   outline: none;
 }
 
-section{
+.countriesGrid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: auto;
-  gap: 25px;
+  grid-gap: 1rem;
+}   
+
+.searchSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
 }

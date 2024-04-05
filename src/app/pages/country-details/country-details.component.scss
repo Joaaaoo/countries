@@ -2,12 +2,30 @@
 
 main{
     padding: 30px 7%;
-
 }
 
 section {
+    margin: 30px auto;
+    padding: 35px;
+    border-radius: 12px;
+    width: auto;
+    background-color: $grey;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+}
+
+h1{
+    font-size: 24px;
+}
+
+.cardInfos{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    flex-wrap: wrap;
+    gap: 10px;
 
 }
 
@@ -20,15 +38,17 @@ button {
     cursor: pointer;
 }
 
-
-.cardImg{
-    height: 200px;
-    width: 300px;
-}
-
 img {
     height: 100%;
     width: 100%;
     border-radius: 4px 4px 0 0;
     object-fit: cover;
 }
+
+
+@media (max-width: 600px) {
+    img{
+        height: 100%;
+        max-width: 80%;
+    }
+  }

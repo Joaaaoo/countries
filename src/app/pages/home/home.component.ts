@@ -10,11 +10,18 @@ import {
   FormsModule,
   ReactiveFormsModule,
 } from '@angular/forms';
+import { ScrollToTopButtonComponent } from '../../components/scroll-to-top-button/scroll-to-top-button.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CardComponent, CommonModule, FormsModule, ReactiveFormsModule],
+  imports: [
+    CardComponent,
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ScrollToTopButtonComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
